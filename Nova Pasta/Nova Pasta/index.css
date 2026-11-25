@@ -1,0 +1,230 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Inter, Arial, sans-serif; }
+body { color:#1a1a2e; background:#fff; line-height:1.5; }
+a { text-decoration:none; color:inherit; }
+
+/* TOPO ESTILO TOTVS */
+.topbar { background:#0a0a2e; color:#fff; text-align:center; padding:8px; font-size:13px; }
+.topbar a { color:#ff6b6b; font-weight:700; }
+.header {
+  position:sticky; top:0; z-index:999; background:#fff;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 5%; box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+.logo { font-size:22px; font-weight:900; letter-spacing:-0.5px; }
+.logo span { color:#ff5a5a; }
+.nav { display:flex; gap:28px; font-weight:600; font-size:15px; }
+.header-acoes { display:flex; gap:10px; align-items:center; }
+.btn-login { background:none; border:1px solid #ddd; padding:9px 18px; border-radius:999px; cursor:pointer; font-weight:600; }
+.btn-cta {
+  background:#ff5a5a; color:#fff; border:none; padding:11px 22px;
+  border-radius:999px; font-weight:700; cursor:pointer; font-size:15px;
+}
+.btn-cta:hover { background:#e04444; }
+.btn-menu { display:none; font-size:24px; background:none; border:none; cursor:pointer; }
+.menu-mobile { display:none; flex-direction:column; gap:15px; padding:20px; background:#fff; }
+
+/* BOTÕES LATERAIS */
+.btn-acessibilidade, .btn-suporte-lateral {
+  position:fixed; right:20px; top:50%; z-index:9999;
+  width:60px; height:42px; background:#0000ff; color:#fff; border:none;
+  border-radius:999px; font-size:20px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center; text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+.btn-acessibilidade { transform:translateY(-48px); }
+.btn-suporte-lateral { transform:translateY(48px); }
+
+/* HERO */
+.hero { display:flex; gap:40px; align-items:center; padding:60px 5%; background:linear-gradient(180deg,#fff1f1,#fff); }
+.hero-texto { flex:1; }
+.badge { background:#ffe0e0; color:#d92d20; padding:7px 14px; border-radius:999px; font-size:12px; font-weight:800; letter-spacing:1px; }
+.hero h1 { font-size:56px; line-height:1.05; margin:18px 0; letter-spacing:-1.5px; }
+.hero h1 span { color:#ff5a5a; }
+.hero-texto p { font-size:18px; color:#555; max-width:520px; }
+.hero-botoes { display:flex; gap:12px; margin:25px 0 15px; flex-wrap:wrap; }
+.grande { padding:15px 30px; font-size:16px; }
+.btn-secundario { background:#fff; border:1px solid #ddd; padding:14px 26px; border-radius:999px; font-weight:700; cursor:pointer; }
+.hero-prova { font-size:14px; color:#666; }
+.hero-img { flex:1; position:relative; }
+.hero-img img { width:100%; height:530px; object-fit:cover; border-radius:20px; box-shadow:0 20px 40px; }
+.card-flutuante { position:absolute; left:-20px; bottom:40px; background:#fff; padding:15px 20px; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.15); display:flex; gap:10px; align-items:center; }
+.card-flutuante2 { position:absolute; right:10px; top:20px; background:#111; color:#fff; padding:10px 16px; border-radius:999px; font-size:13px; font-weight:700; }
+
+.logos { text-align:center; padding:25px; border-bottom:1px solid #eee; color:#888; font-size:13px; }
+.logos div { margin-top:10px; font-size:16px; font-weight:700; color:#333; }
+
+/* O QUE FAZEMOS - IGUAL DA FOTO: FUNDO ROSA + CARDS AMARELOS */
+.o-que-fazemos { background:#ff6b6b; padding:50px 5% 60px; }
+.o-que-fazemos .label { font-size:14px; letter-spacing:1px; color:#111; }
+.o-que-fazemos h2 { font-size:32px; margin:8px 0; color:#111; }
+.o-que-fazemos .sub { color:#222; margin-bottom:30px; }
+.grid-fazemos { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.card-amarelo { background:#fffa7a; padding:28px 22px; border-radius:14px; min-height:220px; }
+.card-amarelo .icone { font-size:26px; margin-bottom:18px; }
+.card-amarelo h3 { font-size:19px; margin-bottom:8px; }
+.card-amarelo p { font-size:15px; line-height:1.5; color:#222; }
+
+/* NÚMEROS */
+.numeros { background:#0a0a2e; color:#fff; display:flex; justify-content:space-around; text-align:center; flex-wrap:wrap; gap:20px; padding:50px 5%; }
+.numeros b { font-size:48px; display:block; color:#fffa7a; }
+.numeros span { color:#ccc; }
+
+/* GALERIA / SOBRE */
+section { padding:60px 5%; }
+.titulo { font-size:36px; text-align:center; }
+.subtitulo { text-align:center; color:#666; margin:10px 0 35px; }
+.galeria { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+.galeria img { width:280px; height:190px; object-fit:cover; border-radius:12px; }
+.sobre { text-align:center; background:#fff9f9; }
+.sobre-texto { max-width:650px; margin:15px auto 25px; color:#555; font-size:17px; }
+.saiba-mais { max-width:800px; margin:auto; }
+.cards-mini { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px; }
+.cards-mini div { background:#f5f5f5; padding:18px; border-radius:12px; }
+.btn-voltar { background:#000; color:#fff; border:none; padding:10px 20px; border-radius:999px; font-weight:600; cursor:pointer; margin-bottom:20px; }
+
+/* DEPOIMENTO + CTA */
+.depoimento { text-align:center; }
+.depo-box { max-width:700px; margin:auto; background:#fff7e0; padding:35px; border-radius:20px; }
+.depo-box p { font-size:22px; font-style:italic; margin-bottom:15px; }
+.depo-box b, .depo-box span { display:block; }
+.cta-final { background:#ff5a5a; color:#fff; text-align:center; border-radius:25px; margin:0 5% 60px; }
+.cta-final h2 { color:#fff; font-size:34px; }
+.cta-final p { color:#ffe0e0; margin:10px 0 25px; }
+.cta-final form { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; max-width:800px; margin:auto; }
+.cta-final input { padding:14px 18px; border:none; border-radius:999px; width:260px; font-size:15px; }
+.cta-final .btn-cta { background:#111; }
+.cta-final small { display:block; margin-top:15px; color:#ffe0e0; }
+
+footer { background:#0a0a2e; color:#fff; padding:50px 5% 20px; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:30px; margin-bottom:30px; }
+.footer-grid p { color:#aaa; margin-top:10px; line-height:1.9; }
+.copy { text-align:center; color:#777; border-top:1px solid #222; padding-top:20px; font-size:13px; }
+
+body.contraste { background:#000; color:#fff; }
+body.contraste .card-amarelo { background:#222; color:#fff; }
+
+@media (max-width:900px) {
+  .nav, .header-acoes { display:none; }
+  .btn-menu { display:block; }
+  .hero { flex-direction:column; text-align:center; }
+  .hero h1 { font-size:38px; }
+  .grid-fazemos { grid-template-columns:1fr 1fr; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
+  .menu-mobile.mostrar { display:flex; }
+  .hero-img img { height:300px; }
+}
+@media (max-width:500px) { .grid-fazemos { grid-template-columns:1fr; } }
+/* BOTÃO ACESSIBILIDADE - LADO DIREITO, AZUL */
+.btn-acessibilidade {
+  position: fixed !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10000 !important;
+  width: 60px !important;
+  height: 60px !important;
+  background: #0000ff !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50% !important;
+  font-size: 28px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+.btn-acessibilidade:hover { background: #0000cc !important; transform: translateY(-50%) scale(1.05) !important; }
+
+/* PAINEL */
+.painel-acessibilidade {
+  position: fixed !important;
+  right: 90px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10001 !important;
+  background: #fff !important;
+  color: #000 !important;
+  padding: 18px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  width: 210px !important;
+}
+.painel-acessibilidade b { text-align: center; margin-bottom: 5px; }
+.painel-acessibilidade button {
+  padding: 11px !important;
+  border: 1px solid #ddd !important;
+  background: #f5f5f5 !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  text-align: left !important;
+  color: #000 !important;
+}
+.painel-acessibilidade button.fechar {
+  background: #000 !important;
+  color: #fff !important;
+  text-align: center !important;
+}
+
+/* MODO CONTRASTE - NÃO QUEBRA O ROSA / AMARELO */
+body.contraste { background: #000 !important; color: #fff !important; }
+body.contraste header, body.contraste section { background: #000 !important; color: #fff !important; }
+body.contraste .card-amarelo { background: #111 !important; color: #fff !important; border: 2px solid #fff !important; }
+body.contraste p, body.contraste h1, body.contraste h2, body.contraste h3 { color: #fff !important; }
+
+#botaoAcessibilidade{
+  position: fixed; top: 15px; right: 15px; z-index: 9999;
+  width: 50px; height: 50px; border-radius: 50%;
+  font-size: 22px; cursor: pointer;
+  background: #fff; border: 1px solid #ccc;
+}
+
+#painel{
+  position: fixed; top: 75px; right: 15px; z-index: 9998;
+  width: 230px; background: #fff; border-radius: 12px;
+  padding: 15px; display: flex; flex-direction: column; gap: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+
+#painel[hidden]{ display: none !important; }
+#painel button{ padding: 10px; border-radius: 8px; border: 1px solid #ddd; cursor: pointer; }
+.painel-topo{ display: flex; justify-content: space-between; align-items: center; }
+
+/* ALTO CONTRASTE */
+body.alto-contraste{ background: #000 !important; color: #fff !important; }
+body.alto-contraste #painel{ background: #111 !important; color: #fff !important; }
+body.alto-contraste #painel button{ background: #222; color: #fff; }
+/* GALERIA COM LEGENDA EMBAIXO */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.foto {
+  margin: 0;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.foto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.foto figcaption {
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  background: #fff;
+}
