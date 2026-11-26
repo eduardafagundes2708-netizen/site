@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saiba Mais - Brazil Estrangeiro</title>
+  <link rel="icon" href="./logooficial.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="saiba-mais.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="index.html" class="header-logo">
+      <img src="./logooficial.png" alt="Brazil Estrangeiro">
+    </a>
+    <nav class="nav">
+      <div class="nav-dropdown">
+        <a href="index.html#danca">Galeria ▾</a>
+        <div class="nav-submenu">
+          <a href="index.html#danca">Dança</a>
+          <a href="index.html#acao-social">Ação Social</a>
+          <a href="index.html#oficinas">Oficinas</a>
+        </div>
+      </div>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <div class="header-acoes">
+      <a href="index.html#contato" class="btn-cta">Quero participar</a>
+    </div>
+    <button class="btn-menu" onclick="abrirMenu()">☰</button>
+  </header>
+
+  <div id="menu-mobile" class="menu-mobile">
+    <a href="index.html">Início</a>
+    <a href="index.html#danca">Dança</a>
+    <a href="index.html#acao-social">Ação Social</a>
+    <a href="index.html#oficinas">Oficinas</a>
+    <a href="index.html#contato">Contato</a>
+    <a href="index.html#contato" class="btn-cta">Quero participar</a>
+  </div>
+
+  <!-- VÍDEO DE FUNDO -->
+  <main class="fundo-saiba">
+    <video class="foto-fundo" autoplay muted loop playsinline>
+      <source src="videodoscaradancando.mp4" type="video/mp4">
+    </video>
+
+    <!-- TEXTO EM CIMA DA IMAGEM -->
+    <div class="conteudo-saiba texto-em-cima">
+      <h1>Brazil Estrangeiro:<br>muito além da dança.</h1>
+
+
+      <p>Lá dentro, crianças, jovens e adultos aprendem dança, aprendem percussão, aprendem a se reconhecer. Nas
+        oficinas, um tambor vira instrumento de autoestima. Uma coreografia vira aula de história. E quando a fome
+        apertava, nasceu a Cozinha Solidária Ancestral, que levava comida, mas levava também afeto, ancestralidade e
+        união pra quem mais precisava.</p>
+      <p>A Cia passou a circular por mostras, eventos comunitários, escolas e instituições, como o Campus Viamão do
+        IFRS, levando a cultura negra pra onde ela precisava estar: perto das pessoas.</p>
+      <p>Até que em 2026, a cidade reconheceu oficialmente o que o povo já sabia há muito tempo. A Câmara Municipal de
+        Viamão, a partir de um projeto de lei do vereador Marco Antonio Borrega, aprovou e o município sancionou a Lei
+        Ordinária nº 5.645/2026, reconhecendo o Instituto de Cultura Negra Brazil Estrangeiro como Patrimônio Cultural
+        Imaterial de Viamão.</p>
+
+
+      <a href="index.html" class="botao botao-escuro">Voltar</a>
+    </div>
+  </main>
+
+  <script src="saiba-mais.js"></script>
+</body>
+
+</html>

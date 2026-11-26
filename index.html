@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazil Estrangeiro - Arte que movimenta a comunidade</title>
+  <link rel="icon" href="./logooficial.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- ELEMENTOS DECORATIVOS DE FUNDO -->
+  <div class="fundo-elementos" aria-hidden="true">
+    <div class="bg-cursor-luz"></div>
+
+    <div class="bg-camada bg-camada-lenta">
+      <span class="bg-orb bg-orb-1"></span>
+      <span class="bg-orb bg-orb-2"></span>
+      <span class="bg-orb bg-orb-3"></span>
+      <span class="bg-pulso bg-pulso-1"></span>
+      <span class="bg-pulso bg-pulso-2"></span>
+    </div>
+
+    <div class="bg-camada bg-camada-media">
+      <span class="bg-anel bg-anel-1"></span>
+      <span class="bg-anel bg-anel-2"></span>
+      <span class="bg-anel bg-anel-3"></span>
+      <svg class="bg-onda bg-onda-1" viewBox="0 0 220 90" fill="none">
+        <path d="M8 56C44 14 82 14 114 52C146 90 184 78 212 30" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="8 10" />
+      </svg>
+      <svg class="bg-onda bg-onda-2" viewBox="0 0 220 90" fill="none">
+        <path d="M10 34C48 76 92 76 126 38C160 0 188 18 210 58" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="10 10" />
+      </svg>
+    </div>
+
+    <div class="bg-camada bg-camada-rapida">
+      <span class="bg-forma bg-estrela-1">✦</span>
+      <span class="bg-forma bg-estrela-2">✦</span>
+      <span class="bg-forma bg-estrela-3">✦</span>
+      <span class="bg-forma bg-coracao-1">♡</span>
+      <span class="bg-forma bg-losango-1">◆</span>
+      <span class="bg-forma bg-losango-2">◆</span>
+      <span class="bg-forma bg-circulo-1"></span>
+      <span class="bg-forma bg-circulo-2"></span>
+      <span class="bg-forma bg-pilula-1"></span>
+      <span class="bg-forma bg-pilula-2"></span>
+    </div>
+  </div>
+
+
+  <!-- BARRA DE PROGRESSO DE LEITURA -->
+  <div id="barra-progresso" class="barra-progresso" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <img src="./logooficial.png" alt="Brazil Estrangeiro">
+    </div>
+    <nav class="nav">
+      <div class="nav-dropdown">
+        <a href="#danca">Galeria ▾</a>
+        <div class="nav-submenu">
+          <a href="#danca">Dança</a>
+          <a href="#acao-social">Ação Social</a>
+          <a href="#oficinas">Oficinas</a>
+        </div>
+      </div>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-acoes">
+
+      <button class="btn-cta" onclick="irContato()">Quero participar</button>
+    </div>
+    <button class="btn-menu" onclick="abrirMenu()">☰</button>
+  </header>
+
+  <div id="menu-mobile" class="menu-mobile">
+    <a href="#inicio">Início</a><a href="#danca">Dança</a><a href="#acao-social">Ação Social</a><a
+      href="#oficinas">Oficinas</a><a href="#contato">Contato</a>
+    <button class="btn-cta" onclick="irContato()">Quero participar</button>
+  </div>
+
+  <!-- BOTÃO SUPORTE IGUAL, EMBAIXO -->
+  <a href="https://wa.me/5551994949041?text=Olá! Preciso de suporte" target="_blank" class="btn-suporte-lateral"
+    title="Suporte" aria-label="Suporte">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+      <path
+        d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+    </svg>
+  </a>
+
+
+  <!-- BOTÃO ACESSIBILIDADE GOV.BR -->
+  <button id="btn-acessibilidade" class="btn-acessibilidade" aria-label="Acessibilidade gov.br" title="Acessibilidade">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" aria-hidden="true">
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 3a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM6.6 9.1c-.45.1-.74.54-.64.99.1.45.54.74.99.64l3.65-.78v3.15l-1.55 4.45c-.15.44.08.92.52 1.07.44.15.92-.08 1.07-.52L12 14.3l1.36 3.8c.15.44.63.67 1.07.52.44-.15.67-.63.52-1.07L13.4 13.1V9.95l3.65.78c.45.1.89-.19.99-.64.1-.45-.19-.89-.64-.99l-4.2-.88a5.8 5.8 0 0 0-2.4 0l-4.2.88z" />
+    </svg>
+  </button>
+
+  <!-- PAINEL ACESSIBILIDADE -->
+  <div id="painel-acessibilidade" class="painel-acessibilidade">
+    <b>Acessibilidade</b>
+    <button id="btn-aumentar">A+ Aumentar letra</button>
+    <button id="btn-diminuir">A- Diminuir letra</button>
+    <button id="btn-contraste">◐ Alto contraste</button>
+    <button id="btn-resetar">↺ Resetar tudo</button>
+    <button id="btn-fechar" class="fechar">Fechar ✕</button>
+  </div>
+
+
+  <!-- HERO - FOTO DA DANÇA -->
+  <section class="hero" id="inicio">
+    <div class="hero-texto">
+      <h1>Arte que movimenta<br>a <span>comunidade.</span></h1>
+      <p>Movimento, cultura e acolhimento. Conheça as áreas que fazem parte do nosso trabalho e venha dançar com a
+        gente.</p>
+      <div class="hero-botoes">
+        <a href="#contato" class="btn-cta">Quero participar</a>
+        <a href="saiba-mais.html" class="btn-saiba-mais">Saiba Mais</a>
+      </div>
+      <div class="hero-prova">Projeto comunitário &nbsp; • &nbsp; +20 participantes &nbsp; • &nbsp; Todos são
+        bem-vindos</div>
+    </div>
+    <div class="hero-img">
+      <img src="./logoo.jpeg" alt="Dança">
+    </div>
+  </section>
+
+
+
+  <!-- NÚMEROS ESTILO TOTVS -->
+  <section class="numeros">
+    <div><b data-count="12">0</b><span>participantes</span></div>
+    <div><b data-count="+1000">0</b><span>áreas de atuação</span></div>
+    <div><b data-count="+1000">0</b><span> apresentações</span></div>
+    <div><b data-count="2">0</b><span> ação comunitária</span></div>
+  </section>
+
+  <section>
+    <div class="cards-mini">
+      <!-- SEÇÃO DANÇA -->
+      <section id="danca" class="secao-danca">
+
+        <!-- TÍTULO CENTRALIZADO EM CIMA -->
+        <div class="danca-topo">
+          <h3>✦ Dança</h3>
+          <p>Expressão corporal e cultura</p>
+        </div>
+
+        <!-- FOTOS EMBAIXO -->
+        <div class="danca-grid">
+
+          <figure class="foto">
+            <img src="2meninos-lanceiro.jpeg" alt="Apresentação no Instituto Federal">
+            <figcaption>Apresentação no Instituto Federal</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="apresentação-maria.jpeg" alt="Apresentação no Quintal do Cooler">
+            <figcaption>Apresentação no Quintal do Cooler</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="nick-zé.jpeg" alt="Apresentação no Quintal do Cooler">
+            <figcaption>Apresentação no Quintal do Cooler</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="bacia.jpeg" alt="Espetáculo 2023">
+            <figcaption>Espetáculo 2023</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="festiva-parte1.jpeg" alt="Festival de Oxum 2025">
+            <figcaption>Festival de Oxum 2025</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="./nick.maquine.jpeg" alt="Apresentação em maquiné 2025">
+            <figcaption>Apresentação em maquiné 2025</figcaption>
+          </figure>
+        </div>
+      </section>
+      <br>
+
+      <!-- SEÇÃO AÇÃO SOCIAL -->
+      <section id="acao-social" class="secao-acao">
+
+        <!-- TÍTULO CENTRALIZADO EM CIMA -->
+        <div class="acao-topo">
+          <h3>♡ Ação Social</h3>
+          <p>Laços da comunidade</p>
+        </div>
+
+        <!-- FOTOS EMBAIXO -->
+        <div class="acao-grid">
+
+          <figure class="foto">
+            <img src="cidade.jpeg" alt="Batalha de slam">
+            <figcaption>Batalha de slam</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="curso.jpeg" alt="Curso de Design Audio Visual">
+            <figcaption>Curso de Design Audio Visual</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="cozinha-comida.jpeg" alt="Cozinha Solidária">
+            <figcaption>Cozinha Solidária</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="panela-carla.jpeg" alt="Cozinha Solidária">
+            <figcaption>Cozinha Solidária</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="publico.jpeg" alt="Cozinha Solidária">
+            <figcaption>Cozinha Solidária</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="arraial.jpeg" alt="Arraial do Cidade Dormitório">
+            <figcaption>Arraial do Cidade Dormitório</figcaption>
+          </figure>
+
+        </div>
+      </section>
+      <br>
+
+      <!-- SEÇÃO OFICINAS -->
+      <section id="oficinas" class="secao-oficinas">
+
+        <!-- TÍTULO CENTRALIZADO EM CIMA -->
+        <div class="oficinas-topo">
+          <h3>⚒ Oficinas</h3>
+          <p>Participação de todos</p>
+        </div>
+
+        <!-- FOTOS EMBAIXO -->
+        <div class="oficinas-grid">
+
+          <figure class="foto">
+            <img src="20-novembro.jpeg" alt="Lei do Feriado Consciência Negra">
+            <figcaption>Lei do Feriado Consciência Negra</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="maria.jpeg" alt="Apresentação na Prefeitura">
+            <figcaption>Apresentação na Prefeitura</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="carla-maquiné.jpeg" alt="Apresentação em Maquiné">
+            <figcaption>Apresentação em Maquiné</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="espetaculo2026.jpeg" alt="Espetáculo 2026">
+            <figcaption>Espetáculo 2026</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="./Agente de Promoção da saúde e Igualdade Racial.jpeg"
+              alt="Agente de Promoção da saúde e Igualdade Racial">
+            <figcaption>Agente de Promoção da saúde e Igualdade Racial</figcaption>
+          </figure>
+
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+
+  <!-- DEPOIMENTO -->
+  <!-- RODA DE FEEDBACK -->
+  <section id="feedback" class="secao-feedback">
+    <h2 class="titulo-feedback">Feedbacks</h2>
+
+    <div class="carrossel">
+      <button id="btn-anterior" class="seta">‹</button>
+
+      <div class="janela">
+        <div id="trilha" class="trilha">
+
+          <!-- CARD 1 -->
+          <div class="card-feedback">
+            <h3>bailarina</h3>
+            <b>Maria eduarda</b>
+            <p>"Aqui eu encontrei minha comunidade. Dançar mudou minha vida e me fez sentir parte de algo maior."</p>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card-feedback">
+            <h3>Bailarino</h3>
+            <b>Victor</b>
+            <p>"O projeto me devolveu a alegria de dançar. Aqui todo mundo é acolhido, sem julgamento."</p>
+
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card-feedback">
+            <h3>Mãe da Bailarina Maria Clara</h3>
+            <b>Sandra</b>
+            <p>"Minha filha mudou muito depois das oficinas. Está mais confiante, mais feliz e mais presente."</p>
+
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="card-feedback">
+            <h3>Bailarino</h3>
+            <b>Nicolas</b>
+            <p>"Aprendi muito mais que dança. Aprendi respeito, união e a acreditar em mim."</p>
+            <span>Quintal do Cooler</span>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="card-feedback">
+            <h3>Pessoa atendida</h3>
+            <b>Jonas</b>
+            <p>"A Cozinha Solidária alimenta o corpo e a alma. É o lugar que abraça todo mundo."</p>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="card-feedback">
+            <h3>Bailarina</h3>
+            <b>Maria Clara</b>
+            <p>"Eu cheguei tímida e hoje me apresento no palco. O Cidade Dormitório me fez florescer."</p>
+          </div>
+
+        </div>
+      </div>
+
+      <button id="btn-proximo" class="seta">›</button>
+    </div>
+
+    <!-- BOLINHAS -->
+    <div id="bolinhas" class="bolinhas"></div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contato" class="cta-final">
+    <h2>Quer fazer parte?</h2>
+    <p>Preencha e a gente fala com você para participar das atividades.</p>
+    <form onsubmit="enviarLead(event)">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="text" id="msg" placeholder="Quero participar de..." required>
+      <button type="submit" class="btn-cta grande">Quero participar</button>
+    </form>
+    <small>Projeto comunitário • Aberto para todos • Vem dançar com a gente</small>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <b>BRAZIL <span>ESTRANGEIRO</span></b>
+        <p>Arte que movimenta a comunidade. Movimento, cultura e acolhimento para todos.</p>
+      </div>
+      <div>
+        <h4>Atividades</h4>
+        <div class="footer-links">
+          <a href="#danca">Dança</a>
+          <a href="#acao-social">Ação social</a>
+          <a href="#oficinas">Oficinas</a>
+        </div>
+      </div>
+      <div>
+        <h4>Projeto</h4>
+        <div class="footer-links">
+          <a href="#danca">Galeria</a>
+          <a href="saiba-mais.html">Saiba mais</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+      <div>
+        <h4>Suporte</h4>
+        <div class="footer-links">
+          <a href="https://wa.me/5551994949041?text=Olá! Preciso de suporte" target="_blank">WhatsApp</a>
+          <a href="#feedback">Feedbacks</a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2026 Brazil Estrangeiro. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- MODAL PREVIEW DE IMAGEM -->
+  <div id="modal-imagem" class="modal-imagem" role="dialog" aria-modal="true" aria-label="Preview da imagem">
+    <div class="modal-imagem-conteudo">
+      <button id="modal-imagem-fechar" class="modal-imagem-fechar" aria-label="Fechar preview">&times;</button>
+      <img id="modal-imagem-img" src="" alt="">
+      <p id="modal-imagem-legenda" class="modal-imagem-legenda"></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+  <!-- VLIBRAS -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    (function posicionarVLibras() {
+      const aplicar = () => {
+        const access = window.VLibrasWidget?.access ||
+          document.getElementById('vlibras-access-wrapper')?.shadowRoot?.getElementById('vlibras-access');
+        if (!access) return false;
+        access.style.top = 'calc(50vh - 72px)';
+        access.style.right = '20px';
+        access.style.zIndex = '9999';
+        return true;
+      };
+      if (!aplicar()) {
+        const obs = new MutationObserver(() => {
+          if (aplicar()) obs.disconnect();
+        });
+        obs.observe(document.body, { childList: true });
+      }
+    })();
+  </script>
+</body>
+
+</html>
